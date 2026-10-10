@@ -1,6 +1,3 @@
--- Create a raw staging table.
--- Dates and fares are VARCHAR on purpose so malformed source values can be inspected
--- before conversion. Map CSV columns to these fields during import.
 USE airline_booking_analysis;
 
 CREATE TABLE IF NOT EXISTS airline_bookings_raw (
@@ -18,6 +15,5 @@ CREATE TABLE IF NOT EXISTS airline_bookings_raw (
     booking_status   VARCHAR(50)
 );
 
--- After importing your CSV, confirm the load:
 SELECT COUNT(*) AS raw_row_count FROM airline_bookings_raw;
 SELECT * FROM airline_bookings_raw LIMIT 10;

@@ -1,9 +1,5 @@
 USE airline_booking_analysis;
 
--- KPI definitions:
--- Total bookings = count of rows in the analysis view.
--- Confirmed revenue = sum of fares for Confirmed records only.
--- Cancellation/no-show rates use all records as the denominator.
 SELECT
   COUNT(*) AS total_records,
   COUNT(DISTINCT booking_id) AS distinct_booking_ids,

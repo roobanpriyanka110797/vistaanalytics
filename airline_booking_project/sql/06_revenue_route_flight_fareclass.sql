@@ -1,6 +1,5 @@
 USE airline_booking_analysis;
 
--- Revenue and booking volume by route
 SELECT
   route,
   COUNT(*) AS total_records,
@@ -11,7 +10,6 @@ FROM airline_analysis
 GROUP BY route
 ORDER BY confirmed_revenue DESC;
 
--- Top 10 routes by confirmed revenue
 SELECT
   route,
   SUM(CASE WHEN booking_status = 'Confirmed' THEN COALESCE(fare_amount, 0) ELSE 0 END) AS confirmed_revenue
@@ -20,7 +18,6 @@ GROUP BY route
 ORDER BY confirmed_revenue DESC
 LIMIT 10;
 
--- Flight performance
 SELECT
   flight_number,
   COUNT(*) AS total_records,
@@ -31,7 +28,6 @@ FROM airline_analysis
 GROUP BY flight_number
 ORDER BY confirmed_revenue DESC;
 
--- Fare class performance
 SELECT
   fare_class,
   COUNT(*) AS total_records,
@@ -42,7 +38,7 @@ FROM airline_analysis
 GROUP BY fare_class
 ORDER BY confirmed_revenue DESC;
 
--- Route contribution to confirmed revenue
+
 WITH route_revenue AS (
   SELECT route,
     SUM(CASE WHEN booking_status = 'Confirmed' THEN COALESCE(fare_amount, 0) ELSE 0 END) AS revenue

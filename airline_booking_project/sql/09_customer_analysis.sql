@@ -1,6 +1,5 @@
 USE airline_booking_analysis;
 
--- Customer summary. Count includes all statuses; revenue includes Confirmed only.
 WITH customer_summary AS (
   SELECT
     passenger_id,
@@ -21,7 +20,6 @@ SELECT *,
 FROM customer_summary
 ORDER BY confirmed_revenue DESC;
 
--- Customer segment rollup
 WITH customer_summary AS (
   SELECT
     passenger_id,
@@ -51,7 +49,6 @@ FROM segmented
 GROUP BY customer_segment
 ORDER BY confirmed_revenue DESC;
 
--- Top 10 customers by confirmed revenue (window function)
 WITH customer_revenue AS (
   SELECT passenger_id, MAX(passenger_name) AS passenger_name,
     SUM(CASE WHEN booking_status = 'Confirmed' THEN COALESCE(fare_amount, 0) ELSE 0 END) AS confirmed_revenue

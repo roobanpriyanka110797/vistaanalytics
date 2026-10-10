@@ -1,6 +1,5 @@
 USE airline_booking_analysis;
 
--- Rank routes by confirmed revenue
 WITH route_revenue AS (
   SELECT route,
     SUM(CASE WHEN booking_status = 'Confirmed' THEN COALESCE(fare_amount, 0) ELSE 0 END) AS revenue
@@ -11,7 +10,6 @@ SELECT route, revenue, RANK() OVER (ORDER BY revenue DESC) AS revenue_rank
 FROM route_revenue
 ORDER BY revenue_rank, route;
 
--- Fare class share of confirmed revenue
 WITH fare_revenue AS (
   SELECT fare_class,
     SUM(CASE WHEN booking_status = 'Confirmed' THEN COALESCE(fare_amount, 0) ELSE 0 END) AS revenue
@@ -23,7 +21,6 @@ SELECT fare_class, revenue,
 FROM fare_revenue
 ORDER BY revenue DESC;
 
--- Month-over-month revenue change by travel month
 WITH monthly_revenue AS (
   SELECT
     DATE_FORMAT(travel_date, '%Y-%m') AS travel_month,
@@ -43,7 +40,6 @@ SELECT travel_month, revenue, previous_month_revenue,
 FROM monthly_lag
 ORDER BY travel_month;
 
--- Data validation summary after cleaning
 SELECT
   COUNT(*) AS clean_rows,
   SUM(booking_id IS NULL) AS missing_booking_id,

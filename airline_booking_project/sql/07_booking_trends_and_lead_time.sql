@@ -1,6 +1,5 @@
 USE airline_booking_analysis;
 
--- Booking-month trends (when tickets were booked)
 SELECT
   DATE_FORMAT(booking_date, '%Y-%m') AS booking_month,
   COUNT(*) AS bookings
@@ -9,7 +8,6 @@ WHERE booking_date IS NOT NULL
 GROUP BY DATE_FORMAT(booking_date, '%Y-%m')
 ORDER BY booking_month;
 
--- Travel-month trends (when flights were scheduled)
 SELECT
   travel_year,
   travel_month_number,
@@ -22,7 +20,6 @@ WHERE travel_date IS NOT NULL
 GROUP BY travel_year, travel_month_number, travel_month
 ORDER BY travel_year, travel_month_number;
 
--- Travel day of week, ordered Monday through Sunday
 SELECT
   WEEKDAY(travel_date) AS weekday_number,
   DAYNAME(travel_date) AS travel_day,
@@ -33,7 +30,6 @@ WHERE travel_date IS NOT NULL
 GROUP BY WEEKDAY(travel_date), DAYNAME(travel_date)
 ORDER BY weekday_number;
 
--- Booking lead-time buckets; invalid negative lead times are excluded for this analysis
 SELECT
   CASE
     WHEN booking_lead_days BETWEEN 0 AND 3 THEN '0-3 days'

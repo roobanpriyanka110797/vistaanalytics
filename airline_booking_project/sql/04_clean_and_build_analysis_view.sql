@@ -1,7 +1,3 @@
--- Create a cleaned table from the raw staging table.
--- Assumptions: source dates are YYYY-MM-DD; fare amounts are numeric or comma/currency-prefixed.
--- Review the data-quality report first. This script preserves rows with missing non-key fields,
--- while excluding rows without a usable booking ID. It does not silently deduplicate conflicting IDs.
 USE airline_booking_analysis;
 
 DROP TABLE IF EXISTS airline_bookings_clean;
@@ -48,13 +44,11 @@ SELECT DISTINCT *
 FROM normalized
 WHERE booking_id IS NOT NULL;
 
--- Add indexes to support common groupings/joins.
 CREATE INDEX idx_clean_booking_id ON airline_bookings_clean (booking_id);
 CREATE INDEX idx_clean_passenger_id ON airline_bookings_clean (passenger_id);
 CREATE INDEX idx_clean_travel_date ON airline_bookings_clean (travel_date);
 CREATE INDEX idx_clean_route ON airline_bookings_clean (origin, destination);
 
--- Helpful analytical view with derived fields.
 CREATE OR REPLACE VIEW airline_analysis AS
 SELECT
   booking_id,
