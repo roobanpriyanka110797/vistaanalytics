@@ -1,0 +1,51 @@
+booking_id,passenger_id,passenger_name,flight_number,origin,destination,booking_date,travel_date,fare_class,fare_amount,booking_channel,booking_status
+BKG1001,P001,Aarav Sharma,AI101,DEL,BOM,2025-01-03,2025-01-20,Economy,5200,Website,Confirmed
+BKG1002,P002,Diya Patel,6E204,BOM,BLR,2025-01-04,2025-01-18,Economy,4100,Mobile App,Confirmed
+BKG1003,P003,Kabir Iyer,UK815,MAA,DEL,2025-01-05,2025-02-02,Business,18500,Travel Agent,Confirmed
+BKG1004,P004,Ananya Reddy,AI505,HYD,DEL,2025-01-06,2025-01-15,Economy,4800,Website,Cancelled
+BKG1005,P005,Ishaan Gupta,6E701,BLR,HYD,2025-01-07,2025-01-25,Premium Economy,7200,Mobile App,Confirmed
+BKG1006,P006,Meera Nair,SG412,MAA,COK,2025-01-08,2025-01-12,Economy,2600,Website,No-show
+BKG1007,P007,Arjun Verma,AI302,DEL,CCU,2025-01-09,2025-02-10,Business,16200,Corporate,Confirmed
+BKG1008,P008,Saanvi Rao,6E118,BOM,GOI,2025-01-10,2025-01-22,Economy,3500,Mobile App,Confirmed
+BKG1009,P009,Vivaan Mehta,UK933,BLR,DEL,2025-01-11,2025-01-30,Premium Economy,8900,Website,Cancelled
+BKG1010,P010,Aadhya Singh,AI640,HYD,MAA,2025-01-12,2025-01-19,Economy,3900,Travel Agent,Confirmed
+BKG1011,P011,Reyansh Joshi,6E330,DEL,BLR,2025-01-13,2025-02-05,Economy,6100,Website,Confirmed
+BKG1012,P012,Kiara Das,UK822,CCU,BOM,2025-01-14,2025-02-14,Business,17400,Corporate,Confirmed
+BKG1013,P013,Advik Kulkarni,SG205,BOM,AMD,2025-01-15,2025-01-28,Economy,3200,Mobile App,Confirmed
+BKG1014,P014,Myra Kapoor,AI711,DEL,JAI,2025-01-16,2025-01-21,Premium Economy,5600,Website,Confirmed
+BKG1015,P015,Krishna Menon,6E509,MAA,BLR,2025-01-17,2025-01-24,Economy,2900,Mobile App,Cancelled
+BKG1016,P016,Pari Chawla,UK601,BLR,COK,2025-01-18,2025-02-01,Business,12800,Corporate,Confirmed
+BKG1017,P017,Atharv Sinha,AI808,HYD,BOM,2025-01-19,2025-02-08,Economy,5400,Website,Confirmed
+BKG1018,P018,Ira Banerjee,6E901,CCU,DEL,2025-01-20,2025-01-27,Economy,4600,Mobile App,No-show
+BKG1019,P019,Dhruv Bansal,UK714,DEL,HYD,2025-01-21,2025-02-18,Business,15100,Travel Agent,Confirmed
+BKG1020,P020,Sara Thomas,AI220,BOM,MAA,2025-01-22,2025-02-03,Premium Economy,6800,Website,Confirmed
+BKG1021,P001,Aarav Sharma,6E205,BOM,BLR,2025-01-23,2025-02-12,Economy,4300,Mobile App,Confirmed
+BKG1022,P002,Diya Patel,AI102,DEL,BOM,2025-01-24,2025-02-06,Economy,5900,Website,Confirmed
+BKG1023,P003,Kabir Iyer,UK816,MAA,DEL,2025-01-25,2025-02-20,Business,19200,Corporate,Confirmed
+BKG1024,P004,Ananya Reddy,6E702,BLR,HYD,2025-01-26,2025-02-02,Economy,3700,Mobile App,Confirmed
+BKG1025,P005,Ishaan Gupta,AI506,HYD,DEL,2025-01-27,2025-02-15,Premium Economy,7600,Website,Cancelled
+BKG1026,P006,Meera Nair,SG413,MAA,COK,2025-01-28,2025-02-04,Economy,2800,Travel Agent,Confirmed
+BKG1027,P007,Arjun Verma,6E119,BOM,GOI,2025-01-29,2025-02-16,Economy,3900,Mobile App,Confirmed
+BKG1028,P008,Saanvi Rao,UK934,BLR,DEL,2025-01-30,2025-02-22,Business,14600,Corporate,Confirmed
+BKG1029,P009,Vivaan Mehta,AI641,HYD,MAA,2025-01-31,2025-02-07,Economy,4200,Website,No-show
+BKG1030,P010,Aadhya Singh,6E331,DEL,BLR,2025-02-01,2025-02-18,Economy,6300,Mobile App,Confirmed
+BKG1031,P011,Reyansh Joshi,UK823,CCU,BOM,2025-02-02,2025-02-25,Business,18100,Corporate,Confirmed
+BKG1032,P012,Kiara Das,SG206,BOM,AMD,2025-02-03,2025-02-10,Economy,3400,Website,Confirmed
+BKG1033,P013,Advik Kulkarni,AI712,DEL,JAI,2025-02-04,2025-02-19,Premium Economy,5800,Mobile App,Confirmed
+BKG1034,P014,Myra Kapoor,6E510,MAA,BLR,2025-02-05,2025-02-13,Economy,3100,Website,Confirmed
+BKG1035,P015,Krishna Menon,UK602,BLR,COK,2025-02-06,2025-02-27,Business,13200,Corporate,Cancelled
+BKG1036,P016,Pari Chawla,AI809,HYD,BOM,2025-02-07,2025-02-21,Economy,5600,Website,Confirmed
+BKG1037,P017,Atharv Sinha,6E902,CCU,DEL,2025-02-08,2025-02-12,Economy,4900,Mobile App,Confirmed
+BKG1038,P018,Ira Banerjee,UK715,DEL,HYD,2025-02-09,2025-03-05,Business,15800,Travel Agent,Confirmed
+BKG1039,P019,Dhruv Bansal,AI221,BOM,MAA,2025-02-10,2025-02-24,Premium Economy,7100,Website,Confirmed
+BKG1040,P020,Sara Thomas,6E206,BOM,BLR,2025-02-11,2025-02-16,Economy,4500,Mobile App,Cancelled
+BKG1041,P001,Aarav Sharma,AI103,DEL,BOM,2025-02-12,2025-03-10,Business,16800,Corporate,Confirmed
+BKG1042,P002,Diya Patel,UK817,MAA,DEL,2025-02-13,2025-02-28,Economy,5500,Website,Confirmed
+BKG1043,P003,Kabir Iyer,6E703,BLR,HYD,2025-02-14,2025-03-01,Economy,4000,Mobile App,Confirmed
+BKG1044,P004,Ananya Reddy,AI507,HYD,DEL,2025-02-15,2025-03-12,Business,15900,Corporate,Confirmed
+BKG1045,P005,Ishaan Gupta,SG414,MAA,COK,2025-02-16,2025-02-20,Economy,2700,Website,No-show
+BKG1046,P006,Meera Nair,6E120,BOM,GOI,2025-02-17,2025-03-02,Economy,3800,Mobile App,Confirmed
+BKG1047,P007,Arjun Verma,UK935,BLR,DEL,2025-02-18,2025-03-15,Premium Economy,9200,Website,Confirmed
+BKG1048,P008,Saanvi Rao,AI642,HYD,MAA,2025-02-19,2025-02-26,Economy,4100,Travel Agent,Confirmed
+BKG1049,P009,Vivaan Mehta,6E332,DEL,BLR,2025-02-20,2025-03-18,Business,17700,Corporate,Confirmed
+BKG1050,P010,Aadhya Singh,UK824,CCU,BOM,2025-02-21,2025-03-08,Economy,4700,Website,Confirmed
