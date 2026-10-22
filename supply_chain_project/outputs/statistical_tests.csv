@@ -1,0 +1,6 @@
+test,statistic,p_value,interpretation
+One-way ANOVA: Lead time by supplier,1.3252322483034344,0.2662200965160497,A small p-value suggests at least one supplier mean differs; association is not causation.
+Pearson correlation: Shipping times vs Shipping costs,0.04510812299703855,0.6558594992495222,Correlation does not establish causation.
+Pearson correlation: Manufacturing lead time vs Manufacturing costs,-0.15809764206518137,0.11618332392628045,Correlation does not establish causation.
+Pearson correlation: Availability vs Number of products sold,0.08749623560220804,0.3866965926887677,Correlation does not establish causation.
+Pearson correlation: Lead time vs Shipping times,-0.022214124611185056,0.826357601608922,Correlation does not establish causation.

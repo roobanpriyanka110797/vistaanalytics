@@ -1,0 +1,12 @@
+KPI,Value,Definition
+SKU / record count,100.0,Distinct SKU count
+Total products sold,46099.0,Sum of Number of products sold
+Total revenue generated,577604.8187380086,Sum of Revenue generated
+Average supplier lead time,17.08,Mean of Lead time field
+Supplier lead-time standard deviation,8.84625127475823,Standard deviation of Lead time
+Average shipping time,5.75,Mean of Shipping times
+Average shipping cost,5.548149072019588,Mean of Shipping costs
+Average manufacturing lead time,14.77,Mean of Manufacturing lead time
+Average defect-rate field,2.27715799273961,Mean of Defect rates; unit/scale should be confirmed
+Low-stock records (stock <= 10),17.0,Count of rows where Stock levels <= 10
+Average inventory availability,48.4,Mean of Availability

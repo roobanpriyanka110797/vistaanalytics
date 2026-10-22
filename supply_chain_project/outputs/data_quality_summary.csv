@@ -1,0 +1,2 @@
+rows_before_cleaning,rows_after_cleaning,duplicate_sku_rows_flagged,missing_cells_after_numeric_conversion
+100,100,0,0

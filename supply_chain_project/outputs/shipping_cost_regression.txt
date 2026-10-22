@@ -1,0 +1,28 @@
+                             OLS Regression Results                            
+===============================================================================
+Dep. Variable:     Q("Shipping costs")   R-squared:                       0.006
+Model:                             OLS   Adj. R-squared:                 -0.036
+Method:                  Least Squares   F-statistic:                    0.1340
+Date:                 Thu, 22 Oct 2026   Prob (F-statistic):              0.969
+Time:                         18:11:30   Log-Likelihood:                -238.62
+No. Observations:                  100   AIC:                             487.2
+Df Residuals:                       95   BIC:                             500.3
+Df Model:                            4                                         
+Covariance Type:             nonrobust                                         
+=========================================================================================
+                            coef    std err          t      P>|t|      [0.025      0.975]
+-----------------------------------------------------------------------------------------
+Intercept                 4.9718      1.026      4.846      0.000       2.935       7.009
+Q("Shipping times")       0.0408      0.100      0.408      0.684      -0.158       0.239
+Q("Order quantities")     0.0001      0.010      0.013      0.990      -0.020       0.020
+Q("Price")                0.0044      0.009      0.497      0.620      -0.013       0.022
+Q("Lead time")            0.0068      0.031      0.219      0.827      -0.055       0.069
+==============================================================================
+Omnibus:                       27.173   Durbin-Watson:                   2.207
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):                5.561
+Skew:                          -0.033   Prob(JB):                       0.0620
+Kurtosis:                       1.847   Cond. No.                         297.
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
